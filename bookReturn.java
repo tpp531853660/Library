@@ -35,7 +35,7 @@ public class bookReturn extends JFrame implements ActionListener{
 	 Object obj = e.getSource();   
 	 if(obj == reconfirm){ 
    bookBean rs = new bookBean();    
-   rs.bookReturn1(sname.getText());    
+   rs.bookReturn(sname.getText());    
    this.dispose();   
    } 
 	 } 

@@ -41,18 +41,23 @@ public void bookMain(){
  }
  catch (Exception e) {
 	 e.printStackTrace();
-	 }   
- }    
+	 }
+}
 private void Init() throws Exception { 
  Container contentPane = this.getContentPane();    
- contentPane.setLayout(new BorderLayout());    //------添加菜单组------- 
+ contentPane.setLayout(new BorderLayout());   
+ //------添加菜单组------- 
  menuSystem.setText("系统操作"); 
  menuSystem.setFont(new Font("Dialog",0,12));    
  menubook.setText("图书信息管理"); 
  menubook.setFont(new Font("Dialog",0,12));    
  menuevent.setText("图书流通管理"); 
- menuevent.setFont(new Font("Dialog",0,12));//---------生成系统管理菜单组---------    itemExit.setText("退出"); 
- itemExit.setFont(new Font("Dialog",0,12));    //--------------生成学生菜单组----------------    itemAdd.setText("增加图书"); 
+ menuevent.setFont(new Font("Dialog",0,12));
+ //---------生成系统管理菜单组---------    
+ itemExit.setText("退出"); 
+ itemExit.setFont(new Font("Dialog",0,12));    
+ //--------------生成学生菜单组----------------    
+ itemAdd.setText("增加图书"); 
  itemAdd.setFont(new Font("Dialog",0,12));    
  itemEdit.setText("修改信息"); 
  itemEdit.setFont(new Font("Dialog",0,12));    
@@ -91,8 +96,7 @@ private void Init() throws Exception {
  itemDisplay.addActionListener(this);    
  setVisible(true); 
  this.addWindowListener(new WindowAdapter(){ 
-  public void windowClosing(WindowEvent e){System.exit(0);}    
-  }    
+  public void windowClosing(WindowEvent e){System.exit(0);}        
 public void actionPerformed(ActionEvent e){    
 	Object obj = e.getSource(); 
  if(obj == itemExit){System.exit(0);}    
@@ -130,11 +134,15 @@ public void actionPerformed(ActionEvent e){
   sre.setVisible(true);    
   }
  else if(obj == itemDisplay){ 
-  bookDisplay sre = new bookDisplay();     
+  BookDisplay sre = new BookDisplay();     
   sre.pack(); 
   sre.setVisible(true);    
   }     
  } 
-public static void main(String[] args){new bookMain();
+public static void main(String[] args){new BookMain();} 
 } 
-} 
+
+@Override
+public void actionPerformed(ActionEvent e) {
+	// TODO 自动生成的方法存根	
+}

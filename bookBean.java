@@ -113,7 +113,7 @@ public class bookBean {
 	   return sn;   
 	   } 
 	  //-----------------ΩË‘ƒÕº È------------------   
- public void bookBook1(String name,String user){    
+ public void bookBook(String name,String user){    
 	 DatabaseConn DB = new DatabaseConn();    
 	 this.sname = name;    
 	 this.suser = user;    
@@ -138,7 +138,7 @@ public class bookBean {
 		 }   
 	 } 
 	  //-----------------πÈªπÕº È------------------   
- public void bookReturn1(String name){ 
+ public void bookReturn(String name){ 
 	   DatabaseConn DB = new DatabaseConn();    
 	   this.sname = name;    
 	   String temp ="ø’œ–";    

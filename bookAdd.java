@@ -23,7 +23,7 @@ public class bookAdd extends JFrame implements ActionListener{
 		  e.printStackTrace();
 		  }   //…Ë÷√æ”÷– 
 	  }
-	  Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();   
+	  Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();  
 	  this.setLocation((int)(screenSize.width - 400)/2,(int)(screenSize.height - 300)/2 +45);  
 	  }   
 	 public void Init() throws Exception{   
@@ -31,7 +31,6 @@ public class bookAdd extends JFrame implements ActionListener{
 		 c = this.getContentPane();   
 		 c.setLayout(new FlowLayout());   
 		 jLabel1.setText("Õº ÈID: "); 
-	 }
 	  jLabel1.setFont(new Font("Dialog",0,12));   
 	  c.add(jLabel1);   sid.setText(null); 
 	  sid.setFont(new Font("Dialog",0,12));   
@@ -59,6 +58,6 @@ public class bookAdd extends JFrame implements ActionListener{
 	   bookBean rs = new bookBean(); 
 	   rs.bookAdd(sid.getText(),sname.getText(),sowner.getText());    
 	   this.dispose();   
-	   }  
-		 } 
+	   }
+		 }
 	 } 
